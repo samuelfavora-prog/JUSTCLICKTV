@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JUST CLICK TV – Premium IPTV & Entertainment Website</title>
+  <meta name="description" content="JUST CLICK TV - Premium IPTV streaming, 4K Android TV Boxes, Smart TV subscriptions, 60,000+ movies & live international channels.">
+  <meta name="keywords" content="IPTV, JUST CLICK TV, Smart TV Subscription, 4K TV Box, Movie App, International Channels, IPTV Subscription">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER / STICKY NAVBAR -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo">
+        <img src="assets/logo.jpg" alt="JUST CLICK TV Logo">
+        <span class="brand-name gold-gradient-text">JUST CLICK TV</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#tv-boxes" class="nav-link">TV Boxes</a></li>
+          <li><a href="#smart-tv" class="nav-link">Smart TV Subscription</a></li>
+          <li><a href="#movie-app" class="nav-link">Smart TV Movie App</a></li>
+          <li><a href="#hardware" class="nav-link">Hardware Store</a></li>
+          <li><a href="#downloads" class="nav-link">Downloads</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-trigger" onclick="openCartDrawer()" title="Shopping Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+
+        <button class="hamburger" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <img src="assets/hero_bg.jpg" alt="IPTV Entertainment Background" class="hero-bg-image">
+    <div class="container hero-content">
+      <div>
+        <div class="hero-badge-container">
+          <span class="hero-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            4K Ultra HD & 8K Ready
+          </span>
+          <span class="hero-badge">18,000+ Channels</span>
+          <span class="hero-badge">60,000+ Movies & VOD</span>
+        </div>
+
+        <h1 class="hero-headline">
+          <span class="gold-gradient-text">Premium Entertainment</span><br>Without Limits
+        </h1>
+
+        <p class="hero-subheadline">
+          Access thousands of live international channels, sports events, movies and premium streaming content from around the world on any device.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#tv-boxes" class="btn btn-gold">Get Started</a>
+          <a href="#smart-tv" class="btn btn-outline-gold">View Packages</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-preview-card">
+          <img src="assets/smart_tv_app.jpg" alt="JUST CLICK TV App Interface">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: TV BOX + SUBSCRIPTION PACKAGES -->
+  <section class="section" id="tv-boxes">
+    <div class="container">
+      <div style="text-align: center;">
+        <span class="section-tag">All-In-One Hardware & Service</span>
+        <h2 class="section-title">TV Box + Subscription Packages</h2>
+        <p class="section-subtitle">Get our high-powered 4K Android TV Box paired with full international channel subscriptions.</p>
+      </div>
+
+      <div id="tvbox-container" class="grid-cards" style="max-width: 600px; margin: 0 auto;">
+        <!-- Dynamic TV Box Card rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: SMART TV SUBSCRIPTIONS -->
+  <section class="section section-alt" id="smart-tv">
+    <div class="container">
+      <div style="text-align: center;">
+        <span class="section-tag">No Hardware Required</span>
+        <h2 class="section-title">Smart TV Subscriptions</h2>
+        <p class="section-subtitle">Designed specifically for Samsung, LG, Sony, and Android Smart TV users. Instant QR & MAC activation.</p>
+      </div>
+
+      <div id="smarttv-container" class="grid-cards" style="max-width: 600px; margin: 0 auto;">
+        <!-- Dynamic Smart TV Card rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: SMART TV MOVIE APP -->
+  <section class="section" id="movie-app">
+    <div class="container">
+      <div style="text-align: center;">
+        <span class="section-tag">Cinema & VOD Dedicated</span>
+        <h2 class="section-title">Smart TV Movie App</h2>
+        <p class="section-subtitle">Stream latest blockbusters, top TV series, and multi-language VOD on demand with high-speed CDN servers.</p>
+      </div>
+
+      <div id="movieapp-container" class="grid-cards" style="max-width: 600px; margin: 0 auto;">
+        <!-- Dynamic Movie App Card rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: HARDWARE STORE -->
+  <section class="section section-alt" id="hardware">
+    <div class="container">
+      <div style="text-align: center;">
+        <span class="section-tag">Accessories & Replacement Parts</span>
+        <h2 class="section-title">Hardware Store</h2>
+        <p class="section-subtitle">Genuine replacement TV boxes, ergonomic remotes, and high-performance power adapters.</p>
+      </div>
+
+      <div class="store-controls">
+        <div class="search-box">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="hw-search" placeholder="Search hardware products..." oninput="filterHardware()">
+        </div>
+      </div>
+
+      <div id="hardware-container" class="grid-cards">
+        <!-- Dynamic Hardware Items rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: DOWNLOADS CENTER -->
+  <section class="section" id="downloads">
+    <div class="container">
+      <div class="downloads-top-bar">
+        <div>
+          <span class="section-tag">Apps & Documentation</span>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 4px;">Downloads Center</h2>
+          <p style="color: var(--text-muted);">Download official APK installers, user manuals, and web streaming apps.</p>
+        </div>
+        <button class="btn btn-outline-gold btn-sm" onclick="openAdminUploadModal()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+          Admin: Upload File
+        </button>
+      </div>
+
+      <div id="downloads-container" style="display: flex; flex-direction: column; gap: 16px;">
+        <!-- Dynamic Downloads rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div style="text-align: center;">
+        <span class="section-tag">24/7 VIP Customer Support</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have questions about subscriptions or technical setup? Our team is available 24/7.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Contact Information -->
+        <div class="glass-panel contact-info-card">
+          <h3 style="font-size: 1.5rem; margin-bottom: 24px; color: var(--gold-light);">Contact Details</h3>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="contact-text">
+              <h4>Headquarters Location</h4>
+              <p>100 Entertainment Blvd, Suite 400, Media City, NY 10001</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div class="contact-text">
+              <h4>Phone / Toll Free</h4>
+              <p>+1 (800) 555-0199 / +1 (888) 900-5878</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="contact-text">
+              <h4>Email Support</h4>
+              <p>support@justclicktv.com / sales@justclicktv.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            </div>
+            <div class="contact-text">
+              <h4>WhatsApp Live Chat</h4>
+              <p>Instant activation & renewal support available 24/7</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="glass-panel contact-form">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="c-name">Full Name *</label>
+              <input type="text" id="c-name" class="form-control" placeholder="John Doe" required>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label for="c-email">Email Address *</label>
+                <input type="email" id="c-email" class="form-control" placeholder="john@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="c-phone">Phone Number</label>
+                <input type="tel" id="c-phone" class="form-control" placeholder="+1 555-0199">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="c-subject">Subject</label>
+              <select id="c-subject" class="form-control">
+                <option value="New Subscription Inquiry">New Subscription Inquiry</option>
+                <option value="TV Box Support">TV Box Support</option>
+                <option value="Smart TV Activation">Smart TV Activation</option>
+                <option value="Billing & Renewals">Billing & Renewals</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="c-message">Message *</label>
+              <textarea id="c-message" class="form-control" placeholder="Describe your inquiry..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: FAQ ACCORDION -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div style="text-align: center;">
+        <span class="section-tag">Help & Knowledge Base</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Find fast answers to common questions regarding setup, channels, and compatibility.</p>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item active">
+          <div class="faq-header">
+            <span class="faq-question">How do JUST CLICK TV subscriptions work?</span>
+            <svg class="faq-toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="faq-body">
+            Once you purchase a subscription (1 Year or 2 Year), our system immediately generates your M3U playlist link, Xtream API credentials, or MAC address activation. If you ordered a TV Box, it arrives pre-configured and ready to plug and play.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <span class="faq-question">Which countries and channels are available?</span>
+            <svg class="faq-toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="faq-body">
+            We cover live TV channels and VOD content across Arabic, English, Italian, Indian, Turkish, Persian, German, African, French, Spanish, and many more. Our packages include premium sports networks, news, documentary, movies, and children channels.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <span class="faq-question">Do subscriptions work directly on Smart TVs without a box?</span>
+            <svg class="faq-toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="faq-body">
+            Yes! You can use our Smart TV Subscription package directly on Samsung, LG, Sony, or Android TVs using applications like Smart IPTV, IBO Player, TiviMate, or IPTV Smarters Pro.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <span class="faq-question">How do I renew my current subscription?</span>
+            <svg class="faq-toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="faq-body">
+            You can select any subscription package from our site and enter your existing username or MAC address during checkout, or reach out to our WhatsApp support team for instant 1-click renewal.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <span class="faq-question">How do I contact customer support if I need setup help?</span>
+            <svg class="faq-toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="faq-body">
+            We provide 24/7 support via our Contact Form, Email (support@justclicktv.com), and instant floating WhatsApp chat on our website.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo" style="margin-bottom:12px;">
+            <img src="assets/logo.jpg" alt="JUST CLICK TV Logo">
+            <span class="brand-name gold-gradient-text">JUST CLICK TV</span>
+          </a>
+          <p>Your premier gateway to unlimited global entertainment. Ultra HD streaming, pre-configured TV boxes, and instant activation worldwide.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#hardware">Hardware Store</a></li>
+            <li><a href="#downloads">Downloads Center</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Subscriptions</h4>
+          <ul>
+            <li><a href="#tv-boxes">TV Box + Subscription</a></li>
+            <li><a href="#smart-tv">Smart TV Subscription</a></li>
+            <li><a href="#movie-app">Smart TV Movie App</a></li>
+            <li><a href="#smart-tv">1 Year Access</a></li>
+            <li><a href="#smart-tv">2 Year VIP Pass</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact & Socials</h4>
+          <ul>
+            <li>Location: NY 10001, USA</li>
+            <li>Phone: +1 (800) 555-0199</li>
+            <li>Email: support@justclicktv.com</li>
+          </ul>
+          <div class="social-links" style="margin-top: 16px;">
+            <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+            <a href="#" class="social-icon" aria-label="Twitter">TW</a>
+            <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+            <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 JUST CLICK TV. All Rights Reserved.</p>
+        <p>Premium Luxury IPTV & Entertainment Ecosystem</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="javascript:void(0)" id="whatsapp-btn" class="whatsapp-float" aria-label="Contact on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- SHOPPING CART SLIDE-OUT DRAWER -->
+  <div class="cart-drawer-overlay" id="cart-overlay" onclick="closeCartDrawer()"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h3 style="color: var(--gold-light);">Your Shopping Cart</h3>
+      <button onclick="closeCartDrawer()" style="background:none; border:none; color:var(--text-muted); font-size:1.5rem; cursor:pointer;">&times;</button>
+    </div>
+    <div class="cart-drawer-body" id="cart-items-container">
+      <!-- Cart Items -->
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal:</span>
+        <span id="cart-subtotal" style="color:var(--gold-primary);">$0.00</span>
+      </div>
+      <button class="btn btn-gold" style="width:100%;" onclick="openCheckoutModal()">Proceed To Checkout</button>
+    </div>
+  </aside>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="modal-overlay" id="checkout-modal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeCheckoutModal()">&times;</button>
+      <h3 style="color:var(--gold-light); font-size:1.6rem; margin-bottom:10px;">Order Checkout</h3>
+      <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:20px;">Review your items and complete your order.</p>
+
+      <div id="checkout-order-summary" style="background:rgba(0,0,0,0.4); padding:16px; border-radius:var(--radius-sm); border:1px solid var(--gold-border); margin-bottom:20px;">
+        <!-- Order Summary -->
+      </div>
+
+      <form onsubmit="processCheckout(event)">
+        <div class="form-group">
+          <label for="co-name">Full Name *</label>
+          <input type="text" id="co-name" class="form-control" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="co-email">Email Address (For Instant Setup Code) *</label>
+          <input type="email" id="co-email" class="form-control" placeholder="john@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="co-payment">Select Payment Method</label>
+          <select id="co-payment" class="form-control">
+            <option value="card">Credit / Debit Card (Stripe Secure)</option>
+            <option value="paypal">PayPal Express Checkout</option>
+            <option value="crypto">Crypto (USDT / BTC 10% Discount)</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-gold" style="width:100%;">Complete Purchase</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- SUCCESS ORDER CONFIRMATION MODAL -->
+  <div class="modal-overlay" id="success-modal">
+    <div class="modal-card" style="text-align: center;">
+      <button class="modal-close" onclick="closeSuccessModal()">&times;</button>
+      <div style="width:70px; height:70px; border-radius:50%; background:rgba(212,175,55,0.2); border:2px solid var(--gold-primary); display:flex; align-items:center; justify-content:center; margin:0 auto 20px auto; color:var(--gold-primary);">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <h3 style="color:var(--gold-light); font-size:1.8rem; margin-bottom:8px;">Order Confirmed!</h3>
+      <p style="color:var(--text-muted); margin-bottom:16px;">Thank you, <span id="success-customer-name" style="color:#fff; font-weight:bold;"></span>!</p>
+      <div style="background:rgba(0,0,0,0.5); padding:16px; border-radius:var(--radius-sm); border:1px solid var(--gold-border); margin-bottom:24px;">
+        <div style="font-size:0.85rem; color:var(--text-muted);">Your Order ID:</div>
+        <div id="success-order-id" style="font-size:1.5rem; font-weight:800; color:var(--gold-primary); letter-spacing:1px;">JCT-892104</div>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-top:8px;">Activation credentials and tracking details have been sent to your email.</p>
+      </div>
+      <button class="btn btn-gold" style="width:100%;" onclick="closeSuccessModal()">Return To Store</button>
+    </div>
+  </div>
+
+  <!-- ADMIN DOWNLOAD FILE UPLOAD MODAL -->
+  <div class="modal-overlay" id="admin-modal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeAdminUploadModal()">&times;</button>
+      <h3 style="color:var(--gold-light); font-size:1.5rem; margin-bottom:10px;">Admin: Upload File</h3>
+      <p style="color:var(--text-muted); font-size:0.875rem; margin-bottom:20px;">Easily add or replace downloadable files in the Downloads Center.</p>
+
+      <form id="admin-upload-form" onsubmit="handleAdminFileUpload(event)">
+        <div class="form-group">
+          <label for="admin-file-name">Display File Name *</label>
+          <input type="text" id="admin-file-name" class="form-control" placeholder="e.g. JUST CLICK IPTV Player v5.0" required>
+        </div>
+
+        <div class="form-group">
+          <label for="admin-file-type">File Format / Extension *</label>
+          <select id="admin-file-type" class="form-control">
+            <option value="apk">APK (Android App)</option>
+            <option value="pdf">PDF (Document / Guide)</option>
+            <option value="zip">ZIP (Archive Codecs)</option>
+            <option value="html">HTML (Web Portal)</option>
+            <option value="software">Software (Windows / Mac Executable)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="admin-file-desc">Short Description</label>
+          <input type="text" id="admin-file-desc" class="form-control" placeholder="Updated installation bundle for Smart TV" required>
+        </div>
+
+        <div class="form-group">
+          <label for="admin-file-input">Select File</label>
+          <input type="file" id="admin-file-input" class="form-control">
+        </div>
+
+        <button type="submit" class="btn btn-gold" style="width:100%;">Upload & Publish File</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Application Script -->
+  <script src="app.js"></script>
+</body>
+</html>
