@@ -1162,4 +1162,20 @@ textarea.form-control {
   .hamburger { display: flex; }
   .footer-grid { grid-template-columns: 1fr; }
   .downloads-top-bar { flex-direction: column; align-items: flex-start; gap: 16px; }
+  
+  .section { padding: 60px 0; }
+  .section-title { font-size: 2rem; }
+  .download-card { flex-direction: column; text-align: center; }
+  .download-meta { justify-content: center; flex-wrap: wrap; }
+  .store-controls { flex-direction: column; align-items: stretch; }
+  .cart-drawer { width: 100%; right: -100%; }
+}
+
+@media (max-width: 480px) {
+  .grid-cards { grid-template-columns: 1fr; }
+  .hero { padding-top: 100px; }
+  .hero-headline { font-size: 2.2rem; }
+  .btn { width: 100%; margin-bottom: 8px; }
+  .contact-info-card, .contact-form, .product-card, .download-card { padding: 20px; }
+  .price-amount { font-size: 1.8rem; }
 }
